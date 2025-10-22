@@ -95,9 +95,96 @@ button:hover {
     font-size: 1.1em;
     word-break: break-all;
 }
+
+#how-to {
+    background: rgba(28, 28, 28, 0.95);
+    margin-top: 40px;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.7;
+    color: #ddd;
+}
+
+#how-to h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+    color: #fff;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+#how-to h2::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 3px;
+    background: #ff6f00;
+    margin: 10px auto 0;
+    border-radius: 3px;
+}
+
+#how-to h3 {
+    color: #ffa040;
+    margin-top: 25px;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+#how-to p {
+    margin: 10px 0;
+    color: #ccc;
+    font-size: 0.95rem;
+}
+
+#how-to ul {
+    margin: 10px 0 20px 22px;
+    padding: 0;
+}
+
+#how-to li {
+    margin-bottom: 6px;
+    color: #ccc;
+}
+
+#how-to code {
+    background: rgba(255, 111, 0, 0.15);
+    padding: 3px 7px;
+    border-radius: 5px;
+    font-family: monospace;
+    color: #ffa040;
+}
+
+#how-to strong {
+    color: #fff;
+}
+
+#how-to p:last-child {
+    text-align: center;
+    font-weight: 700;
+    margin-top: 25px;
+    color: #ffa040;
+    font-size: 1rem;
+}
+
+/* Responsive Anpassung */
+@media (max-width: 768px) {
+    #how-to {
+        padding: 22px;
+    }
+
+    #how-to h2 {
+        font-size: 1.5rem;
+    }
+}
+
 .footer {
     text-align: center;
     margin-top: 32px;
     font-size: 0.95em;
     color: #bbb;
 }
+
+
