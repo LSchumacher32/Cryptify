@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wahre Worte – Geheimer Code Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Wahre Worte</h1>
+        <label for="inputText">Gib deinen Text ein:</label>
+        <textarea id="inputText" placeholder="Schreibe hier..."></textarea>
+        
+        <div class="slider-group">
+            <label for="keyRange">Schlüssel wählen: <span id="keyValue">7</span></label>
+            <input type="range" id="keyRange" min="1" max="25" value="7" oninput="updateKeyValue(this.value)">
+        </div>
+        
+        <div class="select-group">
+            <div>
+                <span>Buchstabe:</span>
+                <div id="letterButtons"></div>
+            </div>
+            <div>
+                <span>Zahl:</span>
+                <div id="numberButtons"></div>
+            </div>
+        </div>
+        
+        <div class="btn-group">
+            <button onclick="encodeText()">Verschlüsseln</button>
+            <button onclick="decodeText()">Entschlüsseln</button>
+        </div>
+        <div id="output" class="output"></div>
+    </div>
+    <div class="footer">
+        &copy; 2025 Wahre Worte – Dein geheimer Code
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
